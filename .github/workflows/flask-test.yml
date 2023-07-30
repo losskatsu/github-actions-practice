@@ -19,7 +19,7 @@ jobs:
         python-version: '3.11'
 
     - name: Build Flask Docker image
-      run: docker container build . -t myflask-test
+      run: docker image build . -t myflask-test
 
     - name: Run Flask Docker container
       run: docker container run myflask-test --name myflask-ac
